@@ -1,6 +1,6 @@
 # ARGV[0] : filename
-# ARGV[1] : string, the string should be included
-# ARGV[2] : boolean, true:included false:not included
+# ARGV[1] : pattern, regular expression e.g. "\\\.*$"
+# ARGV[2] : string  for replace
 
 contents = open(ARGV[0]).read
 replace_str = ARGV[2].nil? ? "" : ARGV[2]
